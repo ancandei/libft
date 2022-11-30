@@ -1,17 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ancandei <ancandei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/23 15:27:58 by ancandei          #+#    #+#             */
-/*   Updated: 2022/11/23 15:27:58 by ancandei         ###   ########.fr       */
+/*   Created: 2022/11/30 12:05:00 by ancandei          #+#    #+#             */
+/*   Updated: 2022/11/30 12:05:00 by ancandei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isascii(int a)
+void	ft_bzero(void *s, size_t n)
 {
-    return (a >= 0 && a <= 127);
+	while (n-- > 0)
+		*((unsigned char *)s++) = 0;
 }

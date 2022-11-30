@@ -1,17 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ancandei <ancandei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/23 15:27:58 by ancandei          #+#    #+#             */
-/*   Updated: 2022/11/23 15:27:58 by ancandei         ###   ########.fr       */
+/*   Created: 2022/11/30 12:04:45 by ancandei          #+#    #+#             */
+/*   Updated: 2022/11/30 12:04:45 by ancandei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isascii(int a)
+void	*ft_memset(void *s, int c, size_t n)
 {
-    return (a >= 0 && a <= 127);
+	size_t		i;
+
+	i = 0;
+	while (i < n)
+	{
+		*(unsigned char *)(s + i) = (unsigned char) c;
+		i++;
+	}
+	return (s);
 }
