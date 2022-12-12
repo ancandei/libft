@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ancandei <ancandei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/23 09:16:47 by ancandei          #+#    #+#             */
-/*   Updated: 2022/11/23 09:16:47 by ancandei         ###   ########.fr       */
+/*   Created: 2022/12/01 23:46:37 by ancandei          #+#    #+#             */
+/*   Updated: 2022/12/01 23:46:37 by ancandei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#ifndef LIBFT_H
+#define LIBFT_H
 
-size_t ft_isalpha(int a)
-{
-     return ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'));
-}
+#include <unistd.h>
+#include <stdlib.h>
+
+#endif
