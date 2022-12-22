@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int ft_isdigit(int arg)
+int	ft_isdigit(int arg)
 {
-    return  (arg > 47 && arg < 58);
+	return (arg > 47 && arg < 58);
 }

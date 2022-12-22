@@ -6,19 +6,20 @@
 /*   By: ancandei <ancandei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 16:16:48 by ancandei          #+#    #+#             */
-/*   Updated: 2022/11/11 16:16:48 by ancandei         ###   ########.fr       */
+/*   Updated: 2022/12/14 18:04:07 by ancandei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-size_t  ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        i++;
-    }
-    return (i);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

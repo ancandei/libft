@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ancandei <ancandei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/30 12:04:45 by ancandei          #+#    #+#             */
-/*   Updated: 2022/11/30 12:04:45 by ancandei         ###   ########.fr       */
+/*   Created: 2022/12/14 18:20:18 by ancandei          #+#    #+#             */
+/*   Updated: 2022/12/14 18:21:04 by ancandei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+int	ft_toupper(int ch)
 {
-	size_t		i;
-
-	i = 0;
-	while (i < n)
+	if (ch > 96 && ch < 123)
 	{
-		*(unsigned char *)(s + i) = (unsigned char) c;
-		i++;
+		ch = ch - 32;
 	}
-	return (s);
+	return (ch);
 }
