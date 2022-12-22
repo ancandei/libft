@@ -6,18 +6,18 @@
 #    By: ancandei <ancandei@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 09:21:43 by ancandei          #+#    #+#              #
-#    Updated: 2022/11/23 09:21:43 by ancandei         ###   ########.fr        #
+#    Updated: 2022/12/13 00:32:08 by ancandei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # -*- Makefile -*-
 
-FILES = 
+FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c
 
 FILES_BONUS =
 
-OBJS = $(FILES:.C=.O)
-OBJS_BONUS = $(FILES_BONUS:.C=.O)
+OBJS = $(FILES:.c=.o)
+OBJS_BONUS = $(FILES_BONUS:.c=.o)
 
 CC = cc 
 CFLAGS = -Wall -Wextra -Werror

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t ft_isalpha(int a)
+size_t	ft_isalpha(int a)
 {
-     return ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'));
+	return ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'));
 }
